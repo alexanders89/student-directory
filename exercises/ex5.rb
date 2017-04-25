@@ -8,7 +8,10 @@ def print(students)
   num = students.count
   until i >= num do
     students.each_with_index do |student, index|
-      puts "#{index + 1}. #{student[:surname].upcase}, #{student[:name].capitalize}.  (#{student[:cohort]} cohort). Born #{student[:birthm].capitalize} #{student[:birthy]}. Country of origin: #{student[:born].upcase}"
+      puts "#{index + 1}. #{student[:surname].upcase}, #{student[:name].capitalize}.
+      (#{student[:cohort]} cohort).
+      Born #{student[:birthm].capitalize} #{student[:birthy]}.
+      Country of origin: #{student[:born].upcase}"
     i +=1
   end
 end
@@ -61,5 +64,5 @@ end
 
 students = input_students
 print_header
-print(students)
+print(students).center(50)
 print_footer(students)
