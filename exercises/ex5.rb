@@ -64,5 +64,5 @@ end
 
 students = input_students
 print_header
-print(students).center(50)
+print(students)
 print_footer(students)
