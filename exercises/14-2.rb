@@ -29,7 +29,7 @@ def process(selection)
     exit
 else
   puts "-" * 80
-  puts "I dont know what you mean, please try again"
+  puts "I dont know what that means, please try again"
   puts ""
 end
 end
